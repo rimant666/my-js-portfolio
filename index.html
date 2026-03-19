@@ -26,24 +26,6 @@
         <button onclick="convert()">Convert</button>
         <p id="remResult"></p>
     </div>
-
-    <script>
-        function prettify() {
-            const input = document.getElementById('jsonInput').value;
-            const output = document.getElementById('jsonOutput');
-            try {
-                const obj = JSON.parse(input);
-                output.innerText = JSON.stringify(obj, null, 4);
-                output.style.display = "block";
-            } catch (e) { alert("Invalid JSON!"); }
-        }
-
-        function convert() {
-            const px = document.getElementById('pxInput').value;
-            const rem = px / 16;
-            document.getElementById('remResult').innerText = rem + "rem (based on 16px root)";
-        }
-    </script>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
